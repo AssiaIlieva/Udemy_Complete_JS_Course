@@ -101,17 +101,41 @@
 //   console.log('Cool! 23 is an amazing number!');
 // }
 
-const favourite = Number(prompt("What's your favourite number?"));
-console.log(favourite);
-console.log(typeof favourite);
+// const favourite = Number(prompt("What's your favourite number?"));
+// console.log(favourite);
+// console.log(typeof favourite);
 
-if (favourite === 23) {
-  // it will be a number and 23 === 23
-  console.log('Cool! 23 is an amazing number!');
-} else if (favourite === 7) {
-  console.log('7 is alse a cool number');
+// if (favourite === 23) {
+//   // it will be a number and 23 === 23
+//   console.log('Cool! 23 is an amazing number!');
+// } else if (favourite === 7) {
+//   console.log('7 is alse a cool number');
+// } else {
+//   console.log('Number is not 23 or 7');
+// }
+
+// if (favourite !== 23) console.log('Why not 23?');
+
+// Logical operatiors
+
+const hasDrivingLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDrivingLicense && hasGoodVision); //false
+console.log(hasDrivingLicense || hasGoodVision); // true
+console.log(!hasDrivingLicense); // false
+
+// const shouldDrive = hasDrivingLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//   console.log('Sarah is able to drive!');
+// } else {
+//   console.log('Someone else should drive...');
+// }
+const isTired = false;
+
+if (hasDrivingLicense && hasGoodVision && !isTired) {
+  console.log('Sarah is able to drive!');
 } else {
-  console.log('Number is not 23 or 7');
+  console.log('Someone else should drive...');
 }
-
-if (favourite !== 23) console.log('Why not 23?');
