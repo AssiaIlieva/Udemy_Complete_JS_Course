@@ -118,12 +118,12 @@
 
 // Logical operatiors
 
-const hasDrivingLicense = true; // A
-const hasGoodVision = true; // B
+// const hasDrivingLicense = true; // A
+// const hasGoodVision = true; // B
 
-console.log(hasDrivingLicense && hasGoodVision); //false
-console.log(hasDrivingLicense || hasGoodVision); // true
-console.log(!hasDrivingLicense); // false
+// console.log(hasDrivingLicense && hasGoodVision); //false
+// console.log(hasDrivingLicense || hasGoodVision); // true
+// console.log(!hasDrivingLicense); // false
 
 // const shouldDrive = hasDrivingLicense && hasGoodVision;
 
@@ -132,10 +132,35 @@ console.log(!hasDrivingLicense); // false
 // } else {
 //   console.log('Someone else should drive...');
 // }
-const isTired = false;
+// const isTired = false;
 
-if (hasDrivingLicense && hasGoodVision && !isTired) {
-  console.log('Sarah is able to drive!');
-} else {
-  console.log('Someone else should drive...');
+// if (hasDrivingLicense && hasGoodVision && !isTired) {
+//   console.log('Sarah is able to drive!');
+// } else {
+//   console.log('Someone else should drive...');
+// }
+
+const day = 'friday';
+
+switch (day) {
+  case 'monday': //day === 'monday'
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+    break;
+  case 'tuesday':
+    console.log('Prepare theory videos');
+    break;
+  case 'wednesday':
+  case 'thurday':
+    console.log('Write code examples');
+    break;
+  case 'friday':
+    console.log('Record videos');
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log('Enjoy the weekend');
+    break;
+  default:
+    console.log('Not a valid day!');
 }
