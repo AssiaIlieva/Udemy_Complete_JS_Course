@@ -31,31 +31,45 @@
 // console.log(appleOrangeJuice);
 
 //Function declaration
-function calcAge1(birthYear) {
-  return 2037 - birthYear;
+// function calcAge1(birthYear) {
+//   return 2037 - birthYear;
+// }
+// const age1 = calcAge1(1991);
+
+// //Function expression
+// const calcAge2 = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+// const age2 = calcAge2(1991);
+
+// console.log(age1, age2);
+
+// //Arrow function - one raw
+// const calcAge3 = (birthYear) => 2037 - birthYear;
+// const age3 = calcAge3(1991);
+// console.log(age3);
+
+// //Arrow function - two parameters, multiple raws
+
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//   const age = 2037 - birthYear;
+//   const retirement = 65 - age;
+//   return `${firstName} retires in ${retirement} years`;
+// };
+
+// console.log(yearsUntilRetirement(1991, 'Jonas'));
+// console.log(yearsUntilRetirement(1980, 'Bob'));
+
+//Functions calling another functions
+function cutFruitPieces(fruit) {
+  return fruit * 4;
 }
-const age1 = calcAge1(1991);
 
-//Function expression
-const calcAge2 = function (birthYear) {
-  return 2037 - birthYear;
-};
-const age2 = calcAge2(1991);
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+  const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+  return juice;
+}
 
-console.log(age1, age2);
-
-//Arrow function - one raw
-const calcAge3 = (birthYear) => 2037 - birthYear;
-const age3 = calcAge3(1991);
-console.log(age3);
-
-//Arrow function - two parameters, multiple raws
-
-const yearsUntilRetirement = (birthYear, firstName) => {
-  const age = 2037 - birthYear;
-  const retirement = 65 - age;
-  return `${firstName} retires in ${retirement} years`;
-};
-
-console.log(yearsUntilRetirement(1991, 'Jonas'));
-console.log(yearsUntilRetirement(1980, 'Bob'));
+console.log(fruitProcessor(2, 3));
