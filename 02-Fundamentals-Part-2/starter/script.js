@@ -160,24 +160,35 @@
 // Array's Methods
 
 //Add elements
-const friends = ['Michal', 'Steven', 'Peter'];
-const newLength = friends.push('Jay');
-console.log(friends);
-console.log(newLength);
-friends.unshift('John');
-console.log(friends);
+// const friends = ['Michal', 'Steven', 'Peter'];
+// const newLength = friends.push('Jay');
+// console.log(friends);
+// console.log(newLength);
+// friends.unshift('John');
+// console.log(friends);
 
 //Remove elements
-friends.pop();
-const popped = friends.pop();
-console.log(friends);
-console.log(popped);
-console.log(friends.shift());
+// friends.pop();
+// const popped = friends.pop();
+// console.log(friends);
+// console.log(popped);
+// console.log(friends.shift());
 
-console.log(friends.indexOf('Steven'));
-console.log(friends.includes('Steven'));
-console.log(friends.includes('Bob'));
+// console.log(friends.indexOf('Steven'));
+// console.log(friends.includes('Steven'));
+// console.log(friends.includes('Bob'));
 
-if (friends.includes('Steven')) {
-  console.log('You have a friend called Steven');
-}
+// if (friends.includes('Steven')) {
+//   console.log('You have a friend called Steven');
+// }
+//Coding Exercise Challenge 2:
+// const calcTip = function(bill){
+//   if(bill >= 50 && bill <= 300){
+//       return bill * 0.15;
+//   }else{
+//       return bill * 0.2
+//   }
+// }
+// const bills = [125, 555, 44]
+// const tips = [calcTip(bills[0]),calcTip(bills[1]), calcTip(bills[2])];
+// const totals = [bills[0]+tips[0], bills[1]+tips[1], bills[2]+tips[2]]
