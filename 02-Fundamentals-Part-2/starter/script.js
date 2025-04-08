@@ -411,3 +411,5 @@
 // };
 
 // console.log(calcAverage(totals));
+
+
