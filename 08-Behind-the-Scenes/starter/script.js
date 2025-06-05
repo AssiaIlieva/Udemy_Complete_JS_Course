@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 function calcAge(birthyear) {
   const age = 2037 - birthyear;
   function printAge() {
@@ -26,4 +26,31 @@ function calcAge(birthyear) {
 
 const firstName = 'Jonas';
 
-calcAge(1991);
+calcAge(1991); */
+
+////////////////
+//Hoisting and TDZ in Practice
+
+// Variables
+console.log(me);
+// console.log(job);
+// console.log(year);
+var me = 'Jonas';
+let job = 'teacher';
+const year = 1991;
+
+// Functions
+
+console.log(addDecl(2, 3));
+// console.log(addExpr(2, 3));
+// console.log(addArrow(2, 3));
+
+function addDecl(a, b) {
+  return a + b;
+}
+
+const addExpr = function (a, b) {
+  return a + b;
+};
+
+var addArrow = (a, b) => a + b;
