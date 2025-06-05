@@ -32,7 +32,7 @@ calcAge(1991); */
 //Hoisting and TDZ in Practice
 
 // Variables
-console.log(me);
+// console.log(me);
 // console.log(job);
 // console.log(year);
 var me = 'Jonas';
@@ -54,3 +54,15 @@ const addExpr = function (a, b) {
 };
 
 var addArrow = (a, b) => a + b;
+
+// Example
+
+console.log(numProducts);
+
+if (!numProducts) deleteShopCart();
+
+var numProducts = 10;
+
+function deleteShopCart() {
+  console.log('All products deleted!');
+}
