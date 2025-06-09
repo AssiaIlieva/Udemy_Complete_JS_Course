@@ -105,7 +105,7 @@ matilda.calcAge();
 
 const f = jonas.calcAge;
 f();
-  */
+ 
 
 //////////////////////
 // Regular functions vs. Arrow Functions
@@ -154,3 +154,32 @@ var addArrow = (a, b) => {
   return a + b;
 };
 addArrow(2, 5, 8);
+ */
+
+////////////////////////
+
+//Memory management: Primitives vs. Objects
+
+const name = 'Jonas';
+const age = calcAge(1991);
+let newAge = age;
+newAge++;
+
+const myLocation = {
+  city: 'Faro',
+  country: 'Portugal',
+};
+console.log(myLocation);
+const newLocation = myLocation;
+console.log(newLocation);
+
+newLocation.city = 'Lisbon';
+console.log(myLocation);
+console.log(newLocation);
+console.log(myLocation.city);
+
+function calcAge(birthYear) {
+  const now = 2037;
+  const x = now - birthYear;
+  return x;
+}
