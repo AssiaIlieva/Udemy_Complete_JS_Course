@@ -67,6 +67,7 @@ console.log(main, secondary, last);
 [main, secondary] = [secondary, main];
 console.log(main, secondary);
 
+//Receive 2 return valies from a function
 const [starter, mainCourse] = restaurant.order(2, 0);
 console.log(starter, mainCourse);
 
